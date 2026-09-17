@@ -13,8 +13,26 @@ function setup() {
 }
 
 function draw() {
-    background(47,78,174);
+    background(109,111,161);
     // call the function - run the code
+      push();
+    fill(255,214,94);
+    stroke(255, 255, 255);
+    rect(0, 0, 375, 750);
+    pop();
+
+    push();
+    fill(255,229,155);
+    stroke(255, 255, 255);
+    rect(0, 0, 200, 750);
+    pop();
+
+    push();
+    fill(45,84,158);
+    stroke(255, 255, 255);
+    rect(550, 0, 375, 750);
+    pop();
+
     drawHill();
     drawTree1();
     drawTree2();
@@ -23,6 +41,7 @@ function draw() {
     drawTree5();
     drawTree6();
     drawMoon();
+    drawSun();
 }
 
  // function to draw tree
@@ -112,9 +131,21 @@ function drawMoon() {
     push();
     fill(220, 220, 220);
     stroke(255, 255, 255);
-    ellipse(700, 50, 300, 300);
+    ellipse(725, 50, 300, 300);
     fill(240, 240, 240);
     stroke(255, 255, 255);
-    ellipse(700, 50, 200, 200);
+    ellipse(725, 50, 200, 200);
     pop();
 }
+
+function drawSun() {
+    push();
+    fill(255,205,58);
+    stroke(255, 255, 255);
+    ellipse(25, 50, 300, 300);
+    fill(255, 190, 0);
+    stroke(255, 255, 255);
+    ellipse(25, 50, 200, 200);
+    pop();
+}
+

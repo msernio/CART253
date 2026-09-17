@@ -1,7 +1,7 @@
 # COURSE WORK
 **MARK SERNIO | 40374220**
 
-![K'gari Island, Australia](TOPICS/Hello-world/Course-website/IMAGES/RobeBeach.png)
+![K'gari Island, Australia](TOPICS/PROTOTYPING/Course-website/IMAGES/RobeBeach.png)
 
 ## PURPOSE
 
@@ -11,5 +11,5 @@ This site will serve as an accessible hub, designed to store and showcase all of
 > - [REFLECTIVE JOURNAL](/Users/marksernio/Documents/GitHub/CART253/journal.md)
 
 ## PROTOTYPES
-> - 
+> - [LANDSCAPE](/Users/marksernio/Documents/GitHub/CART253/journal.md)
 
