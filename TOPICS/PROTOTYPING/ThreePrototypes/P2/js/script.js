@@ -8,13 +8,11 @@
  * p5.js
  * https://p5js.org
  */
-*/
 
 "use strict";
 
 
 // Create the Canvas to set up the frame
-
 function setup() {
     createCanvas(750, 750);
 

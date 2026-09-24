@@ -20,4 +20,18 @@ When it comes to my work, I aspire to create work that helps people and makes th
 ![MY SITE PREVIEW](TOPICS/PROTOTYPING/Course-website/IMAGES/MySite.png)
 
 
+### WEDNESDAY | SETPEMBER 23, 2026
+This excercise was one that I found great for developing my knowledge, however I just feel that I didn't produce technically proficient work compared to what level I think we should be at.
+
+Considering we were to use the knowledge we learnt in class and try not to advance too much further, I found completing these prototypes more of an excerise on my design process and how to get creative with the producing designs off basic code learnt. That being said, it was great to repetitavely use the code so that I learnt it more.
+
+I think one thing I found most confusing was the PI functon for rotating the Ellipse's. My goal going forward is to continue to develop my knowledge and start exploring more with P5 and learning some other functions that differ from or extend on what we learnt in class. 
+
+
+Screenshots of Prototypes:
+![P1](TOPICS/PROTOTYPING/ThreePrototypes/P1/assets/images/Representational.png)
+![P2](TOPICS/PROTOTYPING/ThreePrototypes/P2/assets/images/Abstract.png)
+![P3](TOPICS/PROTOTYPING/ThreePrototypes/P3/assets/images/Weird.png)
+
+
 
