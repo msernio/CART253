@@ -1,6 +1,6 @@
 /**
- * Title of Project
- * Author Name
+ * P2 - Abstract
+ * Mark Sernio
  * 
  * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
  * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
@@ -27,6 +27,7 @@ function draw() {
     drawRect2();
     drawRect3();
     drawRect4();
+    drawRect5();
 
 }
 
@@ -34,7 +35,7 @@ function drawRect1() {
     push();
     fill(0,0,161);
     stroke(0,0,161);
-    rect(0, 380, 480, 100);
+    rect(250, 380, 250, 100);
     pop();
 
 }
@@ -52,7 +53,7 @@ function drawRect3() {
     push();
     fill(0,0,161);
     stroke(0,0,161);
-    rect(0, 15, 250, 100);
+    rect(0, 130, 250, 100);
     pop();
 
 }
@@ -65,6 +66,17 @@ function drawRect4() {
     pop();
 
 }
+
+
+function drawRect5() {
+    push();
+    fill(0,0,161);
+    stroke(0,0,161);
+    rect(0, 250, 250, 130);
+    pop();
+
+}
+
 
 
  // function to draw roof
