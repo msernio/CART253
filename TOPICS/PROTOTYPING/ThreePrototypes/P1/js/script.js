@@ -2,20 +2,24 @@
  * P1 - Representational
  * Mark Sernio
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * An image deisgned to be 'Representational' based on what I learnt after Week 2 and testing that code. 
+ * I took it very literally and just built on my Challenge for week 1 to further develop my skills.
+ * 
+ *  Uses:
+ * p5.js
+ * https://p5js.org
  */
 
 "use strict";
 
-
+// Create the Canvas to set up the frame
 function setup() {
     createCanvas(750, 750);
 
 }
 
+//  This draw function colours the background and calls the drawFace functions to create the illustration.
 function draw() {
-    // call the function - run the code
     background(109,111,161);
 
     drawHill();
@@ -44,7 +48,7 @@ function drawHouseBody() {
     pop();
 }
 
-
+// function to draw the hill
 function drawHill() {
     push();
     fill(0, 128, 0);
@@ -52,7 +56,7 @@ function drawHill() {
     pop();
 }
 
-
+// function to draw the door
 function drawHouseDoor() {
     push();
     fill(128, 64, 0);
@@ -60,6 +64,7 @@ function drawHouseDoor() {
     pop();
 }
 
+// function to draw the windows
 function drawHouseWindows() {
     push();
     fill(173, 216, 230);
@@ -68,6 +73,7 @@ function drawHouseWindows() {
     pop();
 }
 
+// function to draw the Sun with two layers of colour to give it more dimension.
 function drawSun() {
     push();
     fill(255,205,58);
@@ -79,6 +85,7 @@ function drawSun() {
     pop();
 }
 
+// function to draw the handle
 function drawHandle() {
     push();
     fill(160, 64, 0);

@@ -2,20 +2,26 @@
  * P2 - Abstract
  * Mark Sernio
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * An image deisgned to be 'Abstract' based on what I learnt after Week 2 and testing that code.
+ * 
+ *  Uses:
+ * p5.js
+ * https://p5js.org
  */
+*/
 
 "use strict";
 
-/**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
-*/
+
+// Create the Canvas to set up the frame
+
 function setup() {
     createCanvas(750, 750);
 
 }
 
+
+// function to colour the Canvas and call all my draw functions to create the image.
 function draw() {
     // call the function - run the code
     background(0,0,161);
@@ -31,6 +37,8 @@ function draw() {
 
 }
 
+
+// functions to the Rectangle that covers the Circles.
 function drawRect1() {
     push();
     fill(0,0,161);
@@ -79,7 +87,7 @@ function drawRect5() {
 
 
 
- // function to draw roof
+ // function to draw the rows of Circles.
 function drawRow1() {
     push();
     fill(255, 144, 9);

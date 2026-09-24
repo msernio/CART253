@@ -2,7 +2,7 @@
  * P3 - Weird
  * Mark Sernio
  * 
- * An image designed to be 'weird' in my interpretation. I unfortuantely did run
+ * An image designed to be 'weird' in my interpretation, based on what I learnt after Week 2 and testing that code. I unfortuantely did run
  * out of time to add more details to the image, but I did want to submit it as is.
  * 
  * Uses:
@@ -12,16 +12,15 @@
 
 "use strict";
 
-/**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
-*/
+// Create the Canvas to set up the frame
+
 function setup() {
     createCanvas(750, 750);
 }
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * This draw function colours the background and calls the drawFace function to create a face and roate it.
 */
 function draw() {
     background(253,216,8);
@@ -34,6 +33,8 @@ function draw() {
 
 }
 
+
+// Draws the image of the face
 function drawFace() {
     fill(253,216,8);
     stroke(128,0,128);
