@@ -2,14 +2,17 @@
  * Prototype 1 - Variables Prototypes
  * Mark Sernio
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * A prototype designed to build on functions we learnt in Week 3 Class surrounding variables. In particular, this one focuses on defining and calling variables, and how they can be changed in certain functions over time.
+ * 
+ * Uses:
+ * p5.js
+ * https://p5js.org
  */
 
 "use strict";
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * Variables that outline various properties such as the ball and its x, y, and rgb values, as well as the background colours.
 */
 
 let sun = {
@@ -19,12 +22,6 @@ let sun = {
      r:255,
      g:255,
      b:0
-}
-
-let moon = {
-     r:0,
-     g:0,
-     b:50
 }
 
 let skyNight = {
@@ -52,11 +49,15 @@ let sky = {
 }
 
 
+// This setup will just create my canvas for the Prototype
 
 function setup() {
     createCanvas(750, 750);
 
 }
+
+
+// This draw function will colour the background, create my 'Sun' and alter it depedning on the properties defined in the variables above. It also explores constraining those variables to help in the achieving the colour-change process of the background).
 
 function draw() {
     background(sky.fill.r, sky.fill.g, sky.fill.b);
@@ -81,6 +82,7 @@ function draw() {
 }
 
 
+// Function to define the Hill and all of its properties.
 
 function drawHill() {
     push();
