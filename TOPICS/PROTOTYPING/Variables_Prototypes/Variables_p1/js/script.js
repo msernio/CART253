@@ -29,9 +29,9 @@ let moon = {
 
 let skyNight = {
     fill: {
-        r: 109,
-        g: 111,
-        b: 161
+        r: 4,
+        g: 26,
+        b: 64
     }
 }
 
@@ -43,6 +43,14 @@ let skyDay = {
     }
 }
 
+let sky = {
+    fill: {
+        r: 4,
+        g: 26,
+        b: 64
+    }
+}
+
 
 
 function setup() {
@@ -51,18 +59,26 @@ function setup() {
 }
 
 function draw() {
-    background(skyDay.fill.r, skyDay.fill.g, skyDay.fill.b);
+    background(sky.fill.r, sky.fill.g, sky.fill.b);
     
     fill(sun.r, sun.g, sun.b);
     noStroke();
     ellipse(sun.sunX, sun.sunY, sun.sunSize, sun.sunSize);
-    sun.sunY = sun.sunY - 1;
-    sun.sunY = constrain(sun.sunY,750);
+    sun.sunY = sun.sunY - 2;
+    sun.sunY = constrain(sun.sunY,90,550);
+
+    push();
+    sky.fill.r = sky.fill.r + 0.8;
+    sky.fill.r = constrain(sky.fill.r, skyNight.fill.r, skyDay.fill.r);
+    sky.fill.g = sky.fill.g + 0.8;
+    sky.fill.g = constrain(sky.fill.g, skyNight.fill.g, skyDay.fill.g);
+    sky.fill.b = sky.fill.b + 0.8;
+    sky.fill.b = constrain(sky.fill.b, skyNight.fill.b, skyDay.fill.b);
+    pop();
+
     drawHill();
 
-
 }
-
 
 
 
