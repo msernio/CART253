@@ -4,6 +4,11 @@
  *
  * This will be a program in which the user can push a circle
  * on the canvas using their own circle.
+ * 
+ * Uses:
+ * p5.js
+ * https://p5js.org
+ * Pippin's Template
  */
 
 
@@ -46,7 +51,7 @@ function setup() {
 
 
 /**
- * Move the user circle, check for overlap, draw the two circles
+ * Move the user circle (the mouse), check for overlap, draw the two circles
  */
 function draw() {
   background("#aaaaaa");
@@ -54,11 +59,13 @@ function draw() {
   // Move user circle
   movePuck();
   moveUser();
+  // Runs the function that checks the if the Puck is over the Target
   checkTarget();
   
   // Draw the user and puck
   drawUser();
   drawPuck();
+  // Draw the Target
   drawTarget();
 
 }
@@ -93,7 +100,7 @@ function drawPuck() {
   pop();
 }
 
-
+// Function for the the puck moves in correlation with the User (mouse) when they overlap
 function movePuck() {
   let distance = dist(user.x, user.y, puck.x, puck.y);
   let overlap = (distance < user.size/2 + puck.size/2);
@@ -108,6 +115,7 @@ function movePuck() {
 
 }
 
+// Draws the target
 function drawTarget() {
     push();
     fill(target.currentFill);
@@ -115,6 +123,7 @@ function drawTarget() {
     pop()
 }
 
+// Checks if the Puck is on the Target and triggers a colour change if that occurs.
 function checkTarget() {
     let distance = dist(puck.x, puck.y, target.x, target.y);
     let overlap = (distance < puck.size/2 + target.size/2);
