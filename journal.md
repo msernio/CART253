@@ -34,4 +34,17 @@ Screenshots of Prototypes:
 ![P3](TOPICS/PROTOTYPING/ThreePrototypes/P3/assets/images/Weird.png)
 
 
+### WEDNESDAY | SETPEMBER 30, 2026
+This excercise was one that I enjoyed because it helped develop confidence in knowledge of a function that I thought would be complex. It's actaully a super helpful function that makes manipulating things easier and faster to manipulate. One thing I initially struggled to understand was how to call the variables and do it correctly. I still find it a bit confusing but I have gotten much more confident with it. I hope in looking at my work, people can see that I tried to experiement with all the things we learnt in the week and showcase each one in each Prototype. I think because of how helpful the Variables function is, that I can develop my knowledge in them further, and make more complex ones as I progress through the semester.
+
+Screenshots of Prototypes:
+![P1](TOPICS/PROTOTYPING/Variables_Prototypes/Variables_p1/assets/images/P1.png)
+![P1-2](TOPICS/PROTOTYPING/Variables_Prototypes/Variables_p1/assets/images/P1(2).png)
+![P2](TOPICS/PROTOTYPING/Variables_Prototypes/Variables_p1/assets/images/P2.png)
+![P3](TOPICS/PROTOTYPING/Variables_Prototypes/Variables_p1/assets/images/P3.png)
+
+
+
+
+
 

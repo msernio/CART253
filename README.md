@@ -15,5 +15,9 @@ This site will serve as an accessible hub, designed to store and showcase all of
 > - [3 PROTOTYPES - REPRESENTATIONAL](TOPICS/PROTOTYPING/ThreePrototypes/P1/)
 > - [3 PROTOTYPES - ABSTRACT ](TOPICS/PROTOTYPING/ThreePrototypes/P2/)
 > - [3 PROTOTYPES - WEIRD](TOPICS/PROTOTYPING/ThreePrototypes/P3/)
+> - [1 VARIABLES](TOPICS/PROTOTYPING/Variables_Prototypes/Variables_p1/)
+> - [2 VARIABLES](TOPICS/PROTOTYPING/Variables_Prototypes/Variables_p2/)
+> - [3 VARIABLES](TOPICS/PROTOTYPING/Variables_Prototypes/Variables_p3/)
+
 
 

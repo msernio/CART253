@@ -2,7 +2,7 @@
  * Prototype 2 - Variables Prototypes
  * Mark Sernio
  * 
- * A prototype designed to build on functions we learnt in Week 3 Class surrounding variables. In particular, this one focuses on using the random function what can be down with that.
+ * A prototype designed to build on functions we learnt in Week 3 Class surrounding variables. In particular, this one focuses on using the random function and what can be down with that.
  * 
  * Uses:
  * p5.js
