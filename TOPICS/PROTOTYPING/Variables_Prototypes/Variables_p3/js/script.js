@@ -12,9 +12,9 @@
 "use strict";
 
 let box = {
-    x:325,
-    y:325,
-    size:50,
+    x:137.25,
+    y:137.25,
+    size:100,
     r:100,
     g:100,
     b:100
@@ -36,8 +36,32 @@ function setup() {
 function draw() {
     background(255, 100, 100);
 
+    // Top left Box
+    push()
     fill(box.r, box.g, box.b);
     noStroke();
     square(box.x, box.y, box.size);
+    pop()
+
+    // Top Right Box
+    push()
+    fill(box.r, box.g, box.b);
+    noStroke();
+    square(box.x+371.45, box.y, box.size);
+    pop()
+
+    // Bottom Right Box
+    push()
+    fill(box.r, box.g, box.b);
+    noStroke();
+    square(box.x+371.45, box.y+371.45, box.size);
+    pop()
+
+    // Bottom Left Box
+    push()
+    fill(box.r, box.g, box.b);
+    noStroke();
+    square(box.x, box.y+371.45, box.size);
+    pop()
 
 }
