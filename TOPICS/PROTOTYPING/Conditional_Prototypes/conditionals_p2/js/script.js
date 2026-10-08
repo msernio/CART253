@@ -8,15 +8,17 @@
 
 "use strict";
 
-let width = 500;
-let height = 500;
 
-let magnet = {
-    x: width/4,
-    y: height/4,
-    size: 90,
-    fill:"#acacac",
+let lSquare = {
+    x: 125,
+    y: 125,
+    size: 250,
+    fill: {
+        on: "#00ff00",
+        off: "#ff0000"
+    },
 
+    currentFill: "#ff0000"
 }
 
 
@@ -25,7 +27,7 @@ let magnet = {
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
 function setup() {
-    createCanvas(width, height);
+    createCanvas(500, 500);
 }
 
 /**
@@ -34,16 +36,21 @@ function setup() {
 function draw() {
     background(100, 100, 255);
 
-    let distance = dist(magnet.x, magnet.y, mouseX, mouseY);
-
-    fill(magnet.fill);
+push();
+    fill(lSquare.currentFill);
     noStroke();
-    ellipse(magnet.x, magnet.y, magnet.size, magnet.size);
-    ellipse(magnet.x + width/2, magnet.y, magnet.size, magnet.size);
-
-
-
-
+    rect(lSquare.x-lSquare.size/2, lSquare.y-lSquare.size/2, lSquare.size, lSquare.size);
+pop();
+ 
 }
 
+   function mousePressed() {
+        if (lSquare.currentFill === lSquare.fill.off) {
+            lSquare.currentFill = lSquare.fill.on;
+        }
+
+        else {
+            lSquare.currentFill = lSquare.fill.off;
+        }
+   }
 
