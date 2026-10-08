@@ -21,6 +21,42 @@ let lSquare = {
     currentFill: "#ff0000"
 }
 
+let rSquare = {
+    x: 375,
+    y: 125,
+    size: 250,
+    fill: {
+        on: "#ff0000",
+        off: "#3c00ff"
+    },
+
+    currentFill: "#3c00ff"
+}
+
+let lbSquare = {
+    x: 125,
+    y: 375,
+    size: 250,
+    fill: {
+        on: "#ff0000",
+        off: "#3c00ff"
+    },
+
+    currentFill: "#23e2dc"
+}
+
+let rbSquare = {
+    x: 375,
+    y: 375,
+    size: 250,
+    fill: {
+        on: "#ff0000",
+        off: "#3c00ff"
+    },
+
+    currentFill: "#ff0000"
+}
+
 
 
 /**
@@ -41,10 +77,29 @@ push();
     noStroke();
     rect(lSquare.x-lSquare.size/2, lSquare.y-lSquare.size/2, lSquare.size, lSquare.size);
 pop();
- 
+
+push();
+    fill(rSquare.currentFill);
+    noStroke();
+    rect(rSquare.x-rSquare.size/2, rSquare.y-rSquare.size/2, rSquare.size, rSquare.size);
+pop();
+
+push();
+    fill(lbSquare.currentFill);
+    noStroke();
+    rect(lbSquare.x-lbSquare.size/2, lbSquare.y-lbSquare.size/2, lbSquare.size, lbSquare.size);
+pop();
+
+push();
+    fill(rbSquare.currentFill);
+    noStroke();
+    rect(rbSquare.x-rbSquare.size/2, rbSquare.y-rbSquare.size/2, rbSquare.size, rbSquare.size);
+pop();
+
 }
 
-   function mousePressed() {
+   
+function mousePressed() {
         if (lSquare.currentFill === lSquare.fill.off) {
             lSquare.currentFill = lSquare.fill.on;
         }
