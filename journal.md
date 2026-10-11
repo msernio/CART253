@@ -47,9 +47,9 @@ Screenshots of Prototypes:
 This week, I struggled a bit with these Prototypes more so in just grasping the concept of conditionals and how to write them, and link them with the variables. I think one thing I really struggled with was the math side of it, and calculating/coding a formula to work out things like Distance and Distance from mouse to the shape I wanted to effect, etc. That being said, when I finally got it to work, I was happy with what I produced as an exhibit of what we learnt from class, and I think going forward, 'Conditionals' will be a very benefical concept to utilise in the future. I still think I will struggle to use it, but with continued practice I know it will help.
 
 Screenshots of Prototypes:
-![P1](TOPICS/PROTOTYPING/Variables_Prototypes/Variables_p1/assets/images/P1 Con.png)
-![P2](TOPICS/PROTOTYPING/Variables_Prototypes/Variables_p1/assets/images/P2 Con.png)
-![P3](TOPICS/PROTOTYPING/Variables_Prototypes/Variables_p1/assets/images/P3 Con.png)
+![P1](TOPICS/PROTOTYPING/Variables_Prototypes/Variables_p1/assets/images/P1Con.png)
+![P2](TOPICS/PROTOTYPING/Variables_Prototypes/Variables_p1/assets/images/P2Con.png)
+![P3](TOPICS/PROTOTYPING/Variables_Prototypes/Variables_p1/assets/images/P3Con.png)
 
 
 
