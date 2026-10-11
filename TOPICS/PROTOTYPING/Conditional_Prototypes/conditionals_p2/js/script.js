@@ -2,13 +2,17 @@
  * Conditional Prototypes 2
  * Mark Sernio
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * A design which exhibits knowledge learnt from last week's class. When clicking on any of the four squares, they should change color to green, 
+ * and when clicking on them again, they should return to their original red color. It should form a seemless toggle between a compeltely red and green screen.
+ * Uses:
+ * p5.js
+ * https://p5js.org
  */
 
 "use strict";
 
-
+// All of below defines thevariables for each Square object, which contains properties 
+// for its position, size, color, and current fill state.
 let lSquare = {
     x: 125,
     y: 125,
@@ -26,11 +30,11 @@ let rSquare = {
     y: 125,
     size: 250,
     fill: {
-        on: "#ff0000",
-        off: "#3c00ff"
+        on: "#00ff00",
+        off: "#ff0000"
     },
 
-    currentFill: "#3c00ff"
+    currentFill: "#ff0000"
 }
 
 let lbSquare = {
@@ -38,11 +42,11 @@ let lbSquare = {
     y: 375,
     size: 250,
     fill: {
-        on: "#ff0000",
-        off: "#3c00ff"
+        on: "#00ff00",
+        off: "#ff0000"
     },
 
-    currentFill: "#23e2dc"
+    currentFill: "#ff0000"
 }
 
 let rbSquare = {
@@ -50,8 +54,8 @@ let rbSquare = {
     y: 375,
     size: 250,
     fill: {
-        on: "#ff0000",
-        off: "#3c00ff"
+        on: "#00ff00",
+        off: "#ff0000"
     },
 
     currentFill: "#ff0000"
@@ -60,14 +64,14 @@ let rbSquare = {
 
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * Sets up the canvas for the sketch.
 */
 function setup() {
     createCanvas(500, 500);
 }
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * Draws each square and fills them with their current fill color, as well as their position and size realtive to the Width and Height for the Canvas.
 */
 function draw() {
     background(100, 100, 255);
@@ -98,7 +102,8 @@ pop();
 
 }
 
-   
+// Function that outlines the mousePressed event, which checks if the mouse is inside any of the four squares, 
+// and if so, toggles their current fill color between red and green. Same process repeated for each sqaure.   
 function mousePressed() {
 
     //Below are variables to define the measurements of each square to help in determining if the mouse is inside the square

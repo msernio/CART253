@@ -2,15 +2,20 @@
  * Conditional Prototypes 1
  * Mark Sernio
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * A design which exhibits knowledge learnt from last week's class. When hovering the mouse over the circle, it should change color to a lighter shade of green, 
+ * and when the mouse is moved away, it should return to its original color.
+ * Uses:
+ * p5.js
+ * https://p5js.org
  */
 
 "use strict";
 
+// Defined variables for width and height of the Canvas.
 let width = 500;
 let height = 500;
 
+// Variable for the circle object, which contains properties for its position, size, color, and current fill state.
 let circle = {
     x: width/4,
     y: height/4,
@@ -27,7 +32,7 @@ let circle = {
 
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * Sets up the canvas for the sketch.
 */
 function setup() {
     createCanvas(width, height);
@@ -35,7 +40,8 @@ function setup() {
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * Draws the background and creates the 4 circles, as well as their colour, position and size realtive to the Width and Height for the Canvas.
+ * It also defines the code distance parameters for the circles.
 */
 function draw() {
     background(0);

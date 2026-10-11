@@ -2,9 +2,14 @@
  * Conditional Prototypes 3
  * Mark Sernio
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * An a design which exhibits knowledge learnt from last week's class. If you place your mouse in the middle, 
+ * the two boxes on each side should push aware from the mouse, and if you move the mouse away, the boxes should return to their original positions.
+ * 
+ * Uses:
+ * p5.js
+ * https://p5js.org
  */
+
 
 "use strict";
 
@@ -38,8 +43,8 @@ let lBox = {
 }
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
-*/
+ * Sets up the canvas for the sketch.
+ */
 function setup() {
     createCanvas(500,500);
 
@@ -47,10 +52,10 @@ function setup() {
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * Draws the background and the two boxes, and houses the code that moves the boxes away from the mouse when it is in the middle of the canvas.
 */
 function draw() {
-    background(0);
+    background("#ff0000");
 
     // Left box is pushed by the mouse, fenced between hidden and home.
     lBox.targetX = mouseX - lBox.length - lBox.nearDistance;
@@ -68,11 +73,13 @@ function draw() {
     // Draw the boxes
     push()
     fill(rBox.fill);
+    noStroke();
     rect(rBox.x, rBox.y, rBox.length, rBox.width);
     pop()
 
     push()
     fill(lBox.fill);
+    noStroke();
     rect(lBox.x, lBox.y, lBox.length, lBox.width);
     pop()
 }
