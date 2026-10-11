@@ -12,12 +12,18 @@ This site will serve as an accessible hub, designed to store and showcase all of
 
 ## PROTOTYPES
 > - [LANDSCAPE](TOPICS/CHALLENGES/Landscape/js/)
+
 > - [3 PROTOTYPES - REPRESENTATIONAL](TOPICS/PROTOTYPING/ThreePrototypes/P1/)
 > - [3 PROTOTYPES - ABSTRACT ](TOPICS/PROTOTYPING/ThreePrototypes/P2/)
 > - [3 PROTOTYPES - WEIRD](TOPICS/PROTOTYPING/ThreePrototypes/P3/)
+
 > - [1 VARIABLES](TOPICS/PROTOTYPING/Variables_Prototypes/Variables_p1/)
 > - [2 VARIABLES](TOPICS/PROTOTYPING/Variables_Prototypes/Variables_p2/)
 > - [3 VARIABLES](TOPICS/PROTOTYPING/Variables_Prototypes/Variables_p3/)
+
+> - [1 CONDITIONALS](TOPICS/PROTOTYPING/Conditional_Prototypes/conditionals_p1/)
+> - [2 CONDITIONALS](TOPICS/PROTOTYPING/Conditional_Prototypes/conditionals_p2/)
+> - [3 CONDITIONALS](TOPICS/PROTOTYPING/Conditional_Prototypes/conditionals_p3/)
 
 
 
