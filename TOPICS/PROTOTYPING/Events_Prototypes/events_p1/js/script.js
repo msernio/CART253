@@ -28,8 +28,16 @@ let plant = {
 function shrinkPlant() {
     plant.size = plant.size - 10;
 
-
 }
+
+function keyPressed(event) {
+    console.log(event.key)
+    
+    if (event.key === "f"){
+        plant.size = plant.size + 10;
+    }
+}
+
 
 
 /**
@@ -55,5 +63,6 @@ function draw() {
         noStroke();
         ellipse(plant.x, plant.y, plant.size);
     pop()
+
 
 }
