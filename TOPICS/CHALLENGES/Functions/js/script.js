@@ -1,9 +1,11 @@
 /**
  * Bouncy Ball Ball Bonanza
- * Pippin Barr
+ * Mark Sernio
  * 
  * The starting point for a ball-bouncing experience of
  * epic proportions!
+ * 
+ * Template Code from Pippin
  */
 
 "use strict";
