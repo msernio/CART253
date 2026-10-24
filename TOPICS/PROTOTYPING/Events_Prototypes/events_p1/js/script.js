@@ -2,8 +2,8 @@
  * Events Prototype 1
  * Mark Sernio
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * This is the Hungry Plant. if you don't feed it, it the plant shrinks and changes colour
+ * depending on Hunger Levels. To feed the Hungry Plant, press the 'f' key.
  */
 
 "use strict";
@@ -18,7 +18,8 @@ let plant = {
     fillStates: {
         happy: "#3ddc84",
         hungry: "#f3eb08",
-        starving: "#f30808"
+        starving: "#f30808",
+        full: "#ffae00"
     },
 
     currentFill: "#3ddc84"
@@ -28,6 +29,16 @@ let plant = {
 function moodChange() {
     if(plant.size === plant.sizeMin)
         plant.currentFill = plant.fillStates.starving;
+
+    else if(plant.size === plant.sizeMax)
+        plant.currentFill = plant.fillStates.full;
+
+    else if(plant.size < 200)
+        plant.currentFill = plant.fillStates.hungry;
+
+    else if(plant.size > 200)
+        plant.currentFill = plant.fillStates.happy;
+    
 }
 
 function shrinkPlant() {
