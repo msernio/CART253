@@ -11,9 +11,9 @@
 let plant = {
     x: 250,
     y: 250,
-    size: 150,
-    sizeMin: 20,
-    sizeMax: 300,
+    size: 200,
+    sizeMin: 50,
+    sizeMax: 400,
 
     fillStates: {
         happy: "#3ddc84",
@@ -25,21 +25,27 @@ let plant = {
 
 }
 
+function moodChange() {
+    if(plant.size === plant.sizeMin)
+        plant.currentFill = plant.fillStates.starving;
+}
+
 function shrinkPlant() {
-    plant.size = plant.size - 10;
+    plant.size = plant.size - 30;
+
+    plant.size = constrain(plant.size, plant.sizeMin, plant.sizeMax);
 
 }
 
 function keyPressed(event) {
     console.log(event.key)
-    
+
     if (event.key === "f"){
-        plant.size = plant.size + 10;
+        plant.size = plant.size + 20;
     }
+
+    plant.size = constrain(plant.size, plant.sizeMin, plant.sizeMax);
 }
-
-
-
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
@@ -57,6 +63,7 @@ function setup() {
 */
 function draw() {
     background(0);
+    moodChange();
 
      push()
         fill(plant.currentFill);
