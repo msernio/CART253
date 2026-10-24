@@ -25,14 +25,21 @@ let plant = {
 
 }
 
-    
+function shrinkPlant() {
+    plant.size = plant.size - 10;
+
+
+}
+
 
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
 function setup() {
     createCanvas(500,500);
-    background(255, 255, 0);
+    background(0);
+
+    setInterval(shrinkPlant, 1500);
 
 }
 
@@ -41,7 +48,7 @@ function setup() {
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
-    background(255, 255, 0);
+    background(0);
 
      push()
         fill(plant.currentFill);
