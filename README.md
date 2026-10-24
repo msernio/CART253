@@ -25,5 +25,9 @@ This site will serve as an accessible hub, designed to store and showcase all of
 > - [2 CONDITIONALS](TOPICS/PROTOTYPING/Conditional_Prototypes/conditionals_p2/)
 > - [3 CONDITIONALS](TOPICS/PROTOTYPING/Conditional_Prototypes/conditionals_p3/)
 
+> - [1 EVENTS](TOPICS/PROTOTYPING/Events_Prototypes/events_p1/)
+> - [2 EVENTS](TOPICS/PROTOTYPING/Events_Prototypes/events_p2/)
+> - [3 EVENTS](TOPICS/PROTOTYPING/Events_Prototypes/events_p3/)
+
 
 

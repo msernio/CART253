@@ -51,7 +51,14 @@ Screenshots of Prototypes:
 ![P3](TOPICS/PROTOTYPING/Conditional_Prototypes/conditionals_p1/assets/images/3Con.png)
 
 
+### FRIDAY | OCTOBER 23, 2026
+This week we we learnt about Events and how to utilise them within our own code to make a program respond to external input. 
 
+Across my three prototypes I used a timer (setInterval), key presses (keyPressed), the mouse wheel (mouseWheel) and mouse clicks (mousePressed), and combined them with variables and conditionals from earlier weeks. In the Hungry Plant, a timer shrinks the plant while key presses feed it, and an if/else chain changes its colour with its hunger. In the Sky Scroller - which I reworked from my Prototype 1 in our variables Week - scrolling moves the sun and the sky colour follows it. Then finally, the Typing Paint draws entirely from events and doesn't need draw() at all.
 
+The biggest thing I learnt is that events run once per action, unlike checking something every frame in draw(). That made things like toggling a colour on click much more reliable. Events also made my programs feel more alive, because they only act when the user does something. It made it feel like you have more control on how the code can work, but how it can be specific to each users experience too. It certainly something I will continue to adapt and develop going forward.
 
-
+Screenshots of Prototypes:
+![P1](TOPICS/PROTOTYPING/Events_Prototypes/events_p1/assets/images/P1Event.png)
+![P2](TOPICS/PROTOTYPING/Events_Prototypes/events_p1/assets/images/P2Event.png)
+![P3](TOPICS/PROTOTYPING/Events_Prototypes/events_p1/assets/images/P3Event.png)
