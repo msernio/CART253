@@ -2,8 +2,7 @@
  * Events Prototype 2
  * Mark Sernio
  * 
- * This is the Hungry Plant. if you don't feed it, it the plant shrinks and changes colour
- * depending on Hunger Levels. To feed the Hungry Plant, press the 'f' key.
+ * This is a sunrise/sunset controlled by your mouse scroll / trackpad. Scrolling will move the sun/down and change the colour of the sky appropriately.
  * 
  *  * Uses:
  * Base Code from Variables Prototype 1 Week
@@ -14,9 +13,10 @@
 "use strict";
 
 /**
- * Variables that outline various properties such as the ball and its x, y, and rgb values, as well as the background colours.
+ * Variables that outline various properties such as the sun and its x, y, and rgb values, as well as the background colours.
 */
 
+// Variable that defines the sun object and its properties.
 let sun = {
      sunX:375,
      sunY:700,
@@ -26,15 +26,7 @@ let sun = {
      b:0
 }
 
-// let skys = {
-//     fillStates: {
-//         night: (4,26,64),
-//         day: (173,216,230),
-//         sky: (4,26,64),
-//     },
-// }
-
-
+// Variable that defines the 'skyNight' colours.
 let skyNight = {
     fill: {
         r: 4,
@@ -43,6 +35,7 @@ let skyNight = {
     }
 }
 
+// Variable that defines the 'skyDay' colours.
 let skyDay = {
     fill: {
         r: 173,
@@ -51,6 +44,8 @@ let skyDay = {
     }
 }
 
+
+// Variable that defines the 'sky' colours.
 let sky = {
     fill: {
         r: 4,
@@ -60,31 +55,6 @@ let sky = {
 }
 
 
-// This setup will just create my canvas for the Prototype
-
-function setup() {
-    createCanvas(750, 750);
-
-}
-
-
-// This draw function will colour the background, create my 'Sun' and alter it depedning on the properties defined in the variables above. It also explores constraining those variables to help in the achieving the colour-change process of the background).
-
-function draw() {
-    background(sky.fill.r, sky.fill.g, sky.fill.b);
-    
-    fill(sun.r, sun.g, sun.b);
-    noStroke();
-    ellipse(sun.sunX, sun.sunY, sun.sunSize, sun.sunSize);
-
-    
-    drawHill();
-
-    sky.fill.r = map(sun.sunY, 700, 90, skyNight.fill.r, skyDay.fill.r);
-    sky.fill.g = map(sun.sunY, 700, 90, skyNight.fill.g, skyDay.fill.g);
-    sky.fill.b = map(sun.sunY, 700, 90, skyNight.fill.b, skyDay.fill.b);
-
-}
 
 
 // Function to define the Hill and all of its properties.
@@ -97,8 +67,44 @@ function drawHill() {
     pop();
 }
 
+// Event function that controlls how the sun moves through the mouseWheel function, as well as a constraint on its movement, relative to the X and Y axis.
 function mouseWheel(event) {
     sun.sunY = sun.sunY + event.deltaY;
     sun.sunY = constrain(sun.sunY, 90, 700);
 
 }
+
+
+
+
+
+// This setup will just create my canvas for the Prototype
+
+function setup() {
+    createCanvas(750, 750);
+
+}
+
+
+// This draw function will colour the background, create my 'Sun' and alter sky colour depending on the where the mouse is scrolled (controlled by the map function)
+
+function draw() {
+    background(sky.fill.r, sky.fill.g, sky.fill.b);
+    
+    // Draws the sun
+    fill(sun.r, sun.g, sun.b);
+    noStroke();
+    ellipse(sun.sunX, sun.sunY, sun.sunSize, sun.sunSize);
+
+    // Draws the hill
+    drawHill();
+
+    // Maps the Sun's height to the sky colour (ie. low sun = night, high sun = day)
+    sky.fill.r = map(sun.sunY, 700, 90, skyNight.fill.r, skyDay.fill.r);
+    sky.fill.g = map(sun.sunY, 700, 90, skyNight.fill.g, skyDay.fill.g);
+    sky.fill.b = map(sun.sunY, 700, 90, skyNight.fill.b, skyDay.fill.b);
+
+}
+
+
+
