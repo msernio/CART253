@@ -5,7 +5,7 @@
  * This is a sunrise/sunset controlled by your mouse scroll / trackpad. Scrolling will move the sun/down and change the colour of the sky appropriately.
  * 
  *  * Uses:
- * Base Code from Variables Prototype 1 Week
+ * Base Code from Variables Week, Prototype 1
  * p5.js
  * https://p5js.org
  */
