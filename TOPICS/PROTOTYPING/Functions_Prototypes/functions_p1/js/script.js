@@ -84,7 +84,6 @@ function draw() {
 }
 
 
-
 function drawButton(button) {
     push();
         fill(button.currentFill);
@@ -94,81 +93,39 @@ function drawButton(button) {
 
 }
 
-// Function that outlines the mousePressed event, which checks if the mouse is inside any of the four squares, 
-// and if so, toggles their current fill color between red and green. Same process repeated for each sqaure.   
+function isInside(button) {
+    let left = button.x - button.size/2;
+    let right = button.x + button.size/2;
+    let top = button.y - button.size/2;
+    let bottom = button.y + button.size/2;
+    let result = (mouseX > left && mouseX < right && mouseY > top && mouseY < bottom);
+    return result;
+}
+
+function toggleButton(button) {
+    if (button.currentFill === button.fill.off) {
+                button.currentFill = button.fill.on;
+            }
+
+            else {
+                button.currentFill = button.fill.off;
+            } 
+}
+
 function mousePressed() {
-
-    //Below are variables to define the measurements of each square to help in determining if the mouse is inside the square
-    
-    // Top left Sqaure
-    let lTopA = lSquare.x - lSquare.size/2;
-    let rTopA = lSquare.x + lSquare.size/2;
-    let lBottomA = lSquare.y + lSquare.size/2;
-    let rBottomA = lSquare.y - lSquare.size/2;
-    let insideL = (mouseX > lTopA && mouseX < rTopA && mouseY > rBottomA && mouseY < lBottomA);
-
-    if (insideL) {
-       if (lSquare.currentFill === lSquare.fill.off) {
-            lSquare.currentFill = lSquare.fill.on;
-        }
-
-        else {
-            lSquare.currentFill = lSquare.fill.off;
-        } 
+    if (isInside(lSquare)) {
+        toggleButton(lSquare);
     }
 
-
-    // Top right
-    let lTopB = rSquare.x - rSquare.size/2;
-    let rTopB = rSquare.x + rSquare.size/2;
-    let lBottomB = rSquare.y + rSquare.size/2;
-    let rBottomB = rSquare.y - rSquare.size/2;
-    let insideR = (mouseX > lTopB && mouseX < rTopB && mouseY > rBottomB && mouseY < lBottomB);
-
-    if (insideR) {
-        if (rSquare.currentFill === rSquare.fill.off) {
-            rSquare.currentFill = rSquare.fill.on;
-        }
-
-        else {
-            rSquare.currentFill = rSquare.fill.off;
-        }
+    if (isInside(rSquare)) {
+        toggleButton(rSquare);
     }
 
-    // Bottom left
-    let lTopC = lbSquare.x - lbSquare.size/2;
-    let rTopC = lbSquare.x + lbSquare.size/2;
-    let lBottomC = lbSquare.y + lbSquare.size/2;
-    let rBottomC = lbSquare.y - lbSquare.size/2;
-    let insideLB = (mouseX > lTopC && mouseX < rTopC && mouseY > rBottomC && mouseY < lBottomC);
-
-    if (insideLB) {
-        if (lbSquare.currentFill === lbSquare.fill.off) {
-            lbSquare.currentFill = lbSquare.fill.on;
-        }
-
-        else {
-            lbSquare.currentFill = lbSquare.fill.off;
-        }
+    if (isInside(lbSquare)) {
+        toggleButton(lbSquare);
     }
 
-
-    // Bottom right
-    let lTopD = rbSquare.x - rbSquare.size/2;
-    let rTopD = rbSquare.x + rbSquare.size/2;
-    let lBottomD = rbSquare.y + rbSquare.size/2;
-    let rBottomD = rbSquare.y - rbSquare.size/2;
-    let insideRB = (mouseX > lTopD && mouseX < rTopD && mouseY > rBottomD && mouseY < lBottomD);
-
-    if (insideRB) {
-        if (rbSquare.currentFill === rbSquare.fill.off) {
-            rbSquare.currentFill = rbSquare.fill.on;
-        }
-
-        else {
-            rbSquare.currentFill = rbSquare.fill.off;
-        }
+    if (isInside(rbSquare)) {
+        toggleButton(rbSquare);
     }
-
-
 }
