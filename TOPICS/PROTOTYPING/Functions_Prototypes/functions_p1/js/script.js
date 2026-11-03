@@ -115,17 +115,40 @@ function toggleButton(button) {
 function mousePressed() {
     if (isInside(lSquare)) {
         toggleButton(lSquare);
+        affect(lSquare, rSquare, rbSquare, lbSquare);
     }
 
     if (isInside(rSquare)) {
         toggleButton(rSquare);
-    }
-
-    if (isInside(lbSquare)) {
-        toggleButton(lbSquare);
+        affect(rSquare, rbSquare, lbSquare, lSquare);
     }
 
     if (isInside(rbSquare)) {
         toggleButton(rbSquare);
+        affect(rbSquare, lbSquare, lSquare, rSquare);
+
     }
+
+    if (isInside(lbSquare)) {
+        toggleButton(lbSquare);
+        affect(lbSquare, lSquarem, rSquare, rbSquare);
+    }
+
+}
+
+
+
+function affect(clicked, target1, target2, target3) {
+    setTimeout(function() {
+        toggleButton(target1);
+        }, 100);
+    
+        setTimeout(function() {
+        toggleButton(target2);
+        }, 200);
+
+        setTimeout(function() {
+        toggleButton(target3);
+        }, 300);
+
 }
