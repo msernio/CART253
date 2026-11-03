@@ -2,8 +2,10 @@
  * Functions Prototype 1
  * Mark Sernio
  * 
- * A design which exhibits knowledge learnt from last week's class. When clicking on any of the four squares, they should change color to green, 
- * and when clicking on them again, they should return to their original red color. It should form a seemless toggle between a compeltely red and green screen.
+ * When clicking on any of the four squares, they should change colour and set off a 
+ * chain reaction that changes the colour of the other squares in a visually appealing way. 
+ * This animation should occur for each and any of the squares pressed.
+ * 
  * Uses:
  * p5.js
  * https://p5js.org
@@ -11,7 +13,7 @@
 
 "use strict";
 
-// All of below defines thevariables for each Square object, which contains properties 
+// All of below defines the variables for each Square object, which contains properties 
 // for its position, size, color, and current fill state.
 let lSquare = {
     x: 125,
@@ -83,7 +85,7 @@ function draw() {
 
 }
 
-
+// Draws a square based on the properties of the button object passed into the function.
 function drawButton(button) {
     push();
         fill(button.currentFill);
@@ -93,6 +95,8 @@ function drawButton(button) {
 
 }
 
+
+// Function thats checks if the mouse is currently positioned inside the boundaries of the given button.
 function isInside(button) {
     let left = button.x - button.size/2;
     let right = button.x + button.size/2;
@@ -102,6 +106,7 @@ function isInside(button) {
     return result;
 }
 
+// Function that toggles the current fill color of the given button object between its on and off states.
 function toggleButton(button) {
     if (button.currentFill === button.fill.off) {
                 button.currentFill = button.fill.on;
@@ -112,6 +117,8 @@ function toggleButton(button) {
             } 
 }
 
+
+// Function that controls the behaviour of the toggle when clicked, such as what Sqaures will be affected based on the initial square clicked.
 function mousePressed() {
     if (isInside(lSquare)) {
         toggleButton(lSquare);
@@ -137,7 +144,7 @@ function mousePressed() {
 }
 
 
-
+// Function that creates a delay in the toggling of the other squares when one square is clicked, to create a more visually appealing/cohesive effect.
 function affect(clicked, target1, target2, target3) {
     setTimeout(function() {
         toggleButton(target1);
