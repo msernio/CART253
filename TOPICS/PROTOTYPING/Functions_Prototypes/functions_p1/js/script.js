@@ -18,11 +18,11 @@ let lSquare = {
     y: 125,
     size: 250,
     fill: {
-        on: "#00ff00",
-        off: "#ff0000"
+        on: "#ff8000",
+        off: "#0000ff"
     },
 
-    currentFill: "#ff0000"
+    currentFill: "#ff8000"
 }
 
 let rSquare = {
@@ -30,11 +30,11 @@ let rSquare = {
     y: 125,
     size: 250,
     fill: {
-        on: "#00ff00",
-        off: "#ff0000"
+        on: "#ff8000",
+        off: "#0000ff"
     },
 
-    currentFill: "#ff0000"
+    currentFill: "#ff8000"
 }
 
 let lbSquare = {
@@ -42,11 +42,11 @@ let lbSquare = {
     y: 375,
     size: 250,
     fill: {
-        on: "#00ff00",
-        off: "#ff0000"
+        on: "#ff8000",
+        off: "#0000ff"
     },
 
-    currentFill: "#ff0000"
+    currentFill: "#ff8000"
 }
 
 let rbSquare = {
@@ -54,11 +54,11 @@ let rbSquare = {
     y: 375,
     size: 250,
     fill: {
-        on: "#00ff00",
-        off: "#ff0000"
+        on: "#ff8000",
+        off: "#0000ff"
     },
 
-    currentFill: "#ff0000"
+    currentFill: "#ff8000"
 }
 
 
@@ -131,7 +131,7 @@ function mousePressed() {
 
     if (isInside(lbSquare)) {
         toggleButton(lbSquare);
-        affect(lbSquare, lSquarem, rSquare, rbSquare);
+        affect(lbSquare, lSquare, rSquare, rbSquare);
     }
 
 }
