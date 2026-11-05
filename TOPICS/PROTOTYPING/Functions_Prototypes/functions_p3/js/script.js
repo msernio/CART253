@@ -21,18 +21,26 @@ function setup() {
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
-
+    drawFlower(250, 250, 200, 'pink');
 }
 
 function drawPetal(x, y, size, colour) {
     push();
         fill(colour);
         noStroke();
-        ellipse(x, y, size, size * 2);
+        ellipse(x, y, size);
     pop();
 }
 
-function drawFlower(x, y, size) {
+function drawFlower(x, y, size, colour) {
+    drawPetal(x - size / 2, y, size, colour); // left
+    drawPetal(x + size / 2, y, size, colour); // right
+    drawPetal(x, y - size / 2, size, colour); // top
+    drawPetal(x, y + size / 2, size, colour); // bottom
+    drawPetal(x, y, size+10, 'white'); // middle
 
 }
 
+function mousePressed() {
+
+}
