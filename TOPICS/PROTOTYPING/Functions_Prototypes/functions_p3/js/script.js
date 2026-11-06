@@ -2,12 +2,16 @@
  * Functions Prototype 3 
  * Mark Sernio
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * One flower on the Canvas. When the user clicks any of the six petals on the flower,
+ * it will make the petal drop off the flower. If the user wants to reset the flower,
+ * they can click the space bar and that will reload the page.
+ * 
+ * Uses:
+ * p5.js
+ * https://p5js.org
  */
 
 "use strict";
-
 
 
 let petal1;
@@ -19,7 +23,7 @@ let petal6;
 
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * Creates the canvas and builds the six petals.
 */
 function setup() {
     createCanvas(500, 500);
@@ -36,11 +40,12 @@ function setup() {
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * Draws the flower as a whole (center and petals)
 */
 function draw() {
     background('black');
 
+    // Updates each petal's position first, then draws it in its new spot so that falling function can work properly.
     updatePetal(petal1);
     updatePetal(petal2);
     updatePetal(petal3);
@@ -55,6 +60,7 @@ function draw() {
     drawPetal(petal5);
     drawPetal(petal6);
 
+    // Draws flower center
     push();
         fill('yellow');
         stroke('white');
@@ -129,6 +135,7 @@ function updatePetal(petal) {
     }
 }
 
+// Function that outlined when the space bar is pressed, it reloads the page to reset the flower.
 function keyPressed(event) {
     console.log(event.key);
 
