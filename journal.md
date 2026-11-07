@@ -62,3 +62,19 @@ Screenshots of Prototypes:
 ![P1](TOPICS/PROTOTYPING/Events_Prototypes/events_p1/assets/images/P1Event.png)
 ![P2](TOPICS/PROTOTYPING/Events_Prototypes/events_p1/assets/images/P2Event.png)
 ![P3](TOPICS/PROTOTYPING/Events_Prototypes/events_p1/assets/images/P3Event.png)
+
+### FRIDAY | OCTOBER 30, 2026
+
+
+Screenshots of Prototypes:
+![P1](TOPICS/PROTOTYPING/Functions_Prototypes/functions_p3/assets/images/P1Functions.png)
+![P2](TOPICS/PROTOTYPING/Functions_Prototypes/functions_p3/assets/images/P2Functions.png)
+![P3](TOPICS/PROTOTYPING/Functions_Prototypes/functions_p3/assets/images/P3Functions.png)
+
+### FRIDAY | NOVEMBER 6, 2026
+
+
+Screenshots of Prototypes:
+![P1](TOPICS/PROTOTYPING/Functions_Prototypes/functions_p3/assets/images/P1Functions.png)
+![P2](TOPICS/PROTOTYPING/Functions_Prototypes/functions_p3/assets/images/P2Functions.png)
+![P3](TOPICS/PROTOTYPING/Functions_Prototypes/functions_p3/assets/images/P3Functions.png)
