@@ -15,12 +15,8 @@
 "use strict";
 
 
-let petal1;
-let petal2;
-let petal3;
-let petal4;
-let petal5;
-let petal6;
+let petals = [];
+
 
 
 /**
@@ -30,12 +26,12 @@ function setup() {
     createCanvas(500, 500);
     angleMode(DEGREES);
 
-    petal1 = createPetal(0);
-    petal2 = createPetal(60);
-    petal3 = createPetal(120);
-    petal4 = createPetal(180);
-    petal5 = createPetal(240);
-    petal6 = createPetal(300);
+    petals.push(createPetal(0));
+    petals.push(createPetal(60));
+    petals.push(createPetal(120));
+    petals.push(createPetal(180));
+    petals.push(createPetal(240));
+    petals.push(createPetal(300));
 
 }
 
@@ -46,20 +42,13 @@ function setup() {
 function draw() {
     background('black');
 
-    // Updates each petal's position first, then draws it in its new spot so that falling function can work properly.
-    updatePetal(petal1);
-    updatePetal(petal2);
-    updatePetal(petal3);
-    updatePetal(petal4);
-    updatePetal(petal5);
-    updatePetal(petal6);
+    for (let petal of petals){
+        updatePetal(petal);
+        drawPetal(petal);
+    }
 
-    drawPetal(petal1);
-    drawPetal(petal2);
-    drawPetal(petal3);
-    drawPetal(petal4);
-    drawPetal(petal5);
-    drawPetal(petal6);
+    //  This works like - for each thing in balls, call it ball for a moment, and run these three lines on it.
+
 
     // Draws flower center
     push();
@@ -103,29 +92,13 @@ function isInsidePetal(petal) {
 
 // This function will drop the petal clicked, off the flower when the mouse is Pressed.
 function mousePressed() {
-    if (isInsidePetal(petal1)) {
-        petal1.falling = true;
-    }
 
-    if (isInsidePetal(petal2)) {
-        petal2.falling = true;
-    }
-
-     if (isInsidePetal(petal3)) {
-        petal3.falling = true;
+    for (let petal of petals) {
+        if (isInsidePetal(petal)) {
+            petal.falling = true;
+        }
     }
     
-     if (isInsidePetal(petal4)) {
-        petal4.falling = true;
-    }
-
-     if (isInsidePetal(petal5)) {
-        petal5.falling = true;
-    }
-
-     if (isInsidePetal(petal6)) {
-        petal6.falling = true;
-    }
 
 }
 
