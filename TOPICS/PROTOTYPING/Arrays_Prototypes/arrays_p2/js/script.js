@@ -11,7 +11,7 @@
 
 "use strict";
 
-let fortunes = ["YES","CERTAINLY", "NO", "MAYBE", "DONT COUNT ON IT", "UNLIKELY", "POSSIBLY"]
+let fortunes = ["YES","CERTAINLY", "NO", "MAYBE", "DONT COUNT ON IT", "UNLIKELY", "POSSIBLY"];
 
 let fortuneIndex = 0;
 
