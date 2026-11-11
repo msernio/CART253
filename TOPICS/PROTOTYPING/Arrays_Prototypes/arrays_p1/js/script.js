@@ -44,13 +44,13 @@ function setup() {
 function draw() {
     background('skyblue');
 
+    // Draws the petals using other functions (Works like - for each thing in petals, call it petal for a moment, a run the below on it.)
     for (let petal of petals){
         updatePetal(petal);
         drawPetal(petal);
     }
 
-    //  This works like - for each thing in balls, call it ball for a moment, and run these three lines on it.
-
+    // Draws flower centres
     drawCentre(150, 350);
     drawCentre(350, 350);
     drawCentre(250, 150);
