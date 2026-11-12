@@ -48,3 +48,13 @@ function draw() {
 }
 
 
+function mousePressed() {
+
+    if (fortuneIndex < fortunes.length - 1){
+            fortuneIndex = fortuneIndex + 1
+    }
+
+    else{
+        fortuneIndex=0
+    }
+}
