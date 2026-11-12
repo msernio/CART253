@@ -1,0 +1,40 @@
+{
+    "flowers":[
+{
+    "x": 100,
+    "y": 350,
+    "width": 20,
+    "height": 150,
+    "petal_width": 75,
+    "fillStem": "DarkMagenta",
+    "strokePetal": "DarkOrchid",
+    "fillPetal": "HotPink"
+}
+,
+{
+    "x": 200,
+    "y": 420,
+    "width": 20,
+    "height": 80,
+    "petal_width": 75,
+    "fillStem": "DarkMagenta",
+    "strokePetal": "DarkOrchid",
+    "fillPetal": "HotPink"
+}
+,
+{
+
+    "x": 350,
+    "y": 380,
+    "width": 20,
+    "height": 120,
+    "petal_width": 90,
+    "fillStem": "DarkMagenta",
+    "strokePetal": "DarkOrchid",
+    "fillPetal": "HotPink"
+}
+
+    ]
+
+
+}
