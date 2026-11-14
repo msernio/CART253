@@ -15,6 +15,8 @@ let fortunes = ["YES","CERTAINLY", "NO", "MAYBE", "DONT COUNT ON IT", "UNLIKELY"
 
 let fortuneIndex = 0;
 
+let shaking = false;
+
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
@@ -45,16 +47,22 @@ function draw() {
         text(fortunes[fortuneIndex], width/2, height/2);
     pop()
 
+
 }
 
 
+// random(7) gives a decimal like 3.4, and floor() rounds it down to 3, which is a valid position. 
+// Because it uses fortunes.length, it still works if you add more fortunes later.
+
 function mousePressed() {
 
-    if (fortuneIndex < fortunes.length - 1){
-            fortuneIndex = fortuneIndex + 1
-    }
+    fortuneIndex = floor(random(fortunes.length));
 
-    else{
-        fortuneIndex=0
-    }
+    shaking = true;
+    setTimeout(stopShake, 500);
+}
+
+function stopShake() {
+    shaking = false;
+
 }
