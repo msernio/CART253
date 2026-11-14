@@ -5,8 +5,6 @@
  * Three flowers, each with six petals. Click a petal and it falls off the
  * canvas. Press the space bar to reset the flowers.
  *
- * All 18 petals are stored in a single array (petals). .push() adds each
- * petal as the flowers are built, amongst other things like for. loops and functions.
  * 
  * Uses:
  * Based off my Functions P3
