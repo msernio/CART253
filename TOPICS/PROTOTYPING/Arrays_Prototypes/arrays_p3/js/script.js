@@ -15,7 +15,7 @@ let bubbles = [];
 */
 function setup() {
     createCanvas(500, 500);
-    setInterval(addBubble, 500);
+    setInterval(addBubble, 300);
 
 }
 
@@ -27,21 +27,25 @@ function draw() {
     background(240, 240, 240);
 
     for (let bubble of bubbles){
-        updateBubble(bubble);
-        drawBubble(bubble);
+        if(!bubble.popped) {
+            updateBubble(bubble);
+            drawBubble(bubble);
+        }
     }
-
 }
+
 
 function createBubble() {
     
     let newBubble = {
-        x: random(200, 300),
+        x: random(50, 450),
         y: 500,
-        size: random(10,50),
+        size: random(10,80),
         speed: random(1,3),
         fill:'lightblue',
         stroke:'white',
+
+        popped: false,
     };
 
     return newBubble;
@@ -62,7 +66,20 @@ function drawBubble(bubble) {
 
 
 function updateBubble(bubble) {
-    
+
     bubble.y = bubble.y - 5;
 
+}
+
+
+function isInsideBubble(bubble) {
+    return dist(mouseX, mouseY, bubble.x, bubble.y) < bubble.size/2;
+}
+
+function mousePressed() {
+    for (let bubble of bubbles) {
+        if (isInsideBubble(bubble) && !bubble.popped) {
+            bubble.popped = true;
+        }
+    }
 }

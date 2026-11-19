@@ -105,7 +105,6 @@ function draw() {
             }
         }
         
-
     }
 
     // Function so if the petal is 'falling', it and move it down and out of frame to represent that.
