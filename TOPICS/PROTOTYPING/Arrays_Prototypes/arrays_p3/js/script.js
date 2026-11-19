@@ -10,6 +10,8 @@
 
 let bubbles = [];
 
+let bg = (240, 240, 240);
+
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
@@ -24,7 +26,7 @@ function setup() {
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
-    background(240, 240, 240);
+    background(bg);
 
     for (let bubble of bubbles){
         if(!bubble.popped) {
@@ -66,7 +68,6 @@ function drawBubble(bubble) {
 
 
 function updateBubble(bubble) {
-
     bubble.y = bubble.y - 5;
 
 }
@@ -76,10 +77,13 @@ function isInsideBubble(bubble) {
     return dist(mouseX, mouseY, bubble.x, bubble.y) < bubble.size/2;
 }
 
+// 
 function mousePressed() {
     for (let bubble of bubbles) {
         if (isInsideBubble(bubble) && !bubble.popped) {
             bubble.popped = true;
+            bg = color(random(255), random(255), random(255));
         }
     }
+
 }
