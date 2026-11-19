@@ -15,7 +15,7 @@ let bubbles = [];
 */
 function setup() {
     createCanvas(500, 500);
-    setInterval(addBubble, 1000);
+    setInterval(addBubble, 500);
 
 }
 
@@ -24,9 +24,10 @@ function setup() {
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
-    background(200, 200, 200);
+    background(240, 240, 240);
 
     for (let bubble of bubbles){
+        updateBubble(bubble);
         drawBubble(bubble);
     }
 
@@ -35,7 +36,7 @@ function draw() {
 function createBubble() {
     
     let newBubble = {
-        x: random(width),
+        x: random(200, 300),
         y: 500,
         size: random(10,50),
         speed: random(1,3),
@@ -57,4 +58,11 @@ function drawBubble(bubble) {
         stroke(bubble.stroke);
         ellipse(bubble.x, bubble.y, bubble.size);
     pop();
+}
+
+
+function updateBubble(bubble) {
+    
+    bubble.y = bubble.y - 5;
+
 }
