@@ -20,6 +20,7 @@ When it comes to my work, I aspire to create work that helps people and makes th
 ![MY SITE PREVIEW](TOPICS/PROTOTYPING/Course-website/IMAGES/MySite.png)
 
 
+
 ### WEDNESDAY | SETPEMBER 23, 2026
 This excercise was one that I found great for developing my knowledge, however I just feel that I didn't produce technically proficient work compared to what level I think we should be at.
 
@@ -32,10 +33,11 @@ Prototypes:
 > - [LINK TO PROTOTYPE - REPRESENTATIONAL](TOPICS/PROTOTYPING/ThreePrototypes/P1/)
 
 ![P2](TOPICS/PROTOTYPING/ThreePrototypes/P2/assets/images/Abstract.png)
-> - [3 PROTOTYPES - ABSTRACT ](TOPICS/PROTOTYPING/ThreePrototypes/P2/)
+> - [LINK TO PROTOTYPE - ABSTRACT ](TOPICS/PROTOTYPING/ThreePrototypes/P2/)
 
 ![P3](TOPICS/PROTOTYPING/ThreePrototypes/P3/assets/images/Weird.png)
-> - [3 PROTOTYPES - WEIRD](TOPICS/PROTOTYPING/ThreePrototypes/P3/)
+> - [LINK TO PROTOTYPE - WEIRD](TOPICS/PROTOTYPING/ThreePrototypes/P3/)
+
 
 
 ### WEDNESDAY | SETPEMBER 30, 2026
@@ -43,13 +45,13 @@ This excercise was one that I enjoyed because it helped develop confidence in kn
 
 Prototypes:
 ![P1](TOPICS/PROTOTYPING/Variables_Prototypes/Variables_p1/assets/images/P1.png)
-> - [1 VARIABLES](TOPICS/PROTOTYPING/Variables_Prototypes/Variables_p1/)
+> - [LINK TO PROTOTYPE - 1 VARIABLES](TOPICS/PROTOTYPING/Variables_Prototypes/Variables_p1/)
 
 ![P2](TOPICS/PROTOTYPING/Variables_Prototypes/Variables_p1/assets/images/P2.png)
-> - [2 VARIABLES](TOPICS/PROTOTYPING/Variables_Prototypes/Variables_p2/)
+> - [LINK TO PROTOTYPE - 2 VARIABLES](TOPICS/PROTOTYPING/Variables_Prototypes/Variables_p2/)
 
 ![P3](TOPICS/PROTOTYPING/Variables_Prototypes/Variables_p1/assets/images/P3.png)
-> - [3 VARIABLES](TOPICS/PROTOTYPING/Variables_Prototypes/Variables_p3/)
+> - [LINK TO PROTOTYPE - 3 VARIABLES](TOPICS/PROTOTYPING/Variables_Prototypes/Variables_p3/)
 
 
 
@@ -58,13 +60,13 @@ This week, I struggled a bit with these Prototypes more so in just grasping the 
 
 Prototypes:
 ![P1](TOPICS/PROTOTYPING/Conditional_Prototypes/conditionals_p1/assets/images/P1Con.png)
-> - [1 CONDITIONALS](TOPICS/PROTOTYPING/Conditional_Prototypes/conditionals_p1/)
+> - [LINK TO PROTOTYPE - 1 CONDITIONALS](TOPICS/PROTOTYPING/Conditional_Prototypes/conditionals_p1/)
 
 ![P2](TOPICS/PROTOTYPING/Conditional_Prototypes/conditionals_p1/assets/images/P2Con.png)
-> - [2 CONDITIONALS](TOPICS/PROTOTYPING/Conditional_Prototypes/conditionals_p2/)
+> - [LINK TO PROTOTYPE - 2 CONDITIONALS](TOPICS/PROTOTYPING/Conditional_Prototypes/conditionals_p2/)
 
-![P3](TOPICS/PROTOTYPING/Conditional_Prototypes/conditionals_p1/assets/images/3Con.png)
-> - [3 CONDITIONALS](TOPICS/PROTOTYPING/Conditional_Prototypes/conditionals_p3/)
+![P3](TOPICS/PROTOTYPING/Conditional_Prototypes/conditionals_p1/assets/images/P3Con.png)
+> - [LINK TO PROTOTYPE - 3 CONDITIONALS](TOPICS/PROTOTYPING/Conditional_Prototypes/conditionals_p3/)
 
 
 
@@ -77,13 +79,14 @@ The biggest thing I learnt is that events run once per action, unlike checking s
 
 Prototypes:
 ![P1](TOPICS/PROTOTYPING/Events_Prototypes/events_p1/assets/images/P1Event.png)
-> - [1 EVENTS](TOPICS/PROTOTYPING/Events_Prototypes/events_p1/)
+> - [LINK TO PROTOTYPE - 1 EVENTS](TOPICS/PROTOTYPING/Events_Prototypes/events_p1/)
 
 ![P2](TOPICS/PROTOTYPING/Events_Prototypes/events_p1/assets/images/P2Event.png)
-> - [2 EVENTS](TOPICS/PROTOTYPING/Events_Prototypes/events_p2/)
+> - [LINK TO PROTOTYPE - 2 EVENTS](TOPICS/PROTOTYPING/Events_Prototypes/events_p2/)
 
 ![P3](TOPICS/PROTOTYPING/Events_Prototypes/events_p1/assets/images/P3Event.png)
-> - [3 EVENTS](TOPICS/PROTOTYPING/Events_Prototypes/events_p3/)
+> - [LINK TO PROTOTYPE - 3 EVENTS](TOPICS/PROTOTYPING/Events_Prototypes/events_p3/)
+
 
 
 ### FRIDAY | OCTOBER 30, 2026
@@ -99,13 +102,14 @@ I’d like to develop the flower further. I wrote petal1 to petal6 out by hand, 
 
 Prototypes:
 ![P1](TOPICS/PROTOTYPING/Functions_Prototypes/functions_p3/assets/images/P1Functions.png)
-> - [1 FUNCTIONS](TOPICS/PROTOTYPING/Functions_Prototypes/functions_p1/)
+> - [LINK TO PROTOTYPE - 1 FUNCTIONS](TOPICS/PROTOTYPING/Functions_Prototypes/functions_p1/)
 
 ![P2](TOPICS/PROTOTYPING/Functions_Prototypes/functions_p3/assets/images/P2Functions.png)
-> - [2 FUNCTIONS](TOPICS/PROTOTYPING/Functions_Prototypes/functions_p2/)
+> - [LINK TO PROTOTYPE - 2 FUNCTIONS](TOPICS/PROTOTYPING/Functions_Prototypes/functions_p2/)
 
 ![P3](TOPICS/PROTOTYPING/Functions_Prototypes/functions_p3/assets/images/P3Functions.png)
-> - [3 FUNCTIONS](TOPICS/PROTOTYPING/Functions_Prototypes/functions_p3/)
+> - [LINK TO PROTOTYPE - 3 FUNCTIONS](TOPICS/PROTOTYPING/Functions_Prototypes/functions_p3/)
+
 
 
 ### FRIDAY | NOVEMBER 6, 2026
@@ -119,11 +123,11 @@ One of the challenges I encourntered was the index. In my fortune orb, I had the
 
 Prototypes:
 ![P1](TOPICS/PROTOTYPING/Arrays_Prototypes/arrays_p1/assets/images/P1Arrays.png)
-> - [1 ARRAYS](TOPICS/PROTOTYPING/Arrays_Prototypes/arrays_p1/)
+> - [LINK TO PROTOTYPE - 1 ARRAYS](TOPICS/PROTOTYPING/Arrays_Prototypes/arrays_p1/)
 
 ![P2](TOPICS/PROTOTYPING/Arrays_Prototypes/arrays_p1/assets/images/P2Arrays.png)
-> - [2 ARRAYS](TOPICS/PROTOTYPING/Arrays_Prototypes/arrays_p2/)
+> - [LINK TO PROTOTYPE - 2 ARRAYS](TOPICS/PROTOTYPING/Arrays_Prototypes/arrays_p2/)
 
 ![P3](TOPICS/PROTOTYPING/Arrays_Prototypes/arrays_p1/assets/images/P3Arrays.png)
-> - [3 ARRAYS](TOPICS/PROTOTYPING/Arrays_Prototypes/arrays_p3/)
+> - [LINK TO PROTOTYPE - 3 ARRAYS](TOPICS/PROTOTYPING/Arrays_Prototypes/arrays_p3/)
 
