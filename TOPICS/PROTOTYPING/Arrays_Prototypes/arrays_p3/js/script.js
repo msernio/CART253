@@ -87,8 +87,7 @@ function isInsideBubble(bubble) {
     return dist(mouseX, mouseY, bubble.x, bubble.y) < bubble.size/2;
 }
 
-// When clicked, it loops through each bubble and if the mouse is on one that isnt popped yet,
-// it pops it and sets a new random background colour.
+// When clicked, it loops through each bubble and if the mouse is on one that isnt popped yet, it pops it and sets a new random background colour.
 function mousePressed() {
     for (let bubble of bubbles) {
         if (isInsideBubble(bubble) && !bubble.popped) {

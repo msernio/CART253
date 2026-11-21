@@ -29,5 +29,13 @@ This site will serve as an accessible hub, designed to store and showcase all of
 > - [2 EVENTS](TOPICS/PROTOTYPING/Events_Prototypes/events_p2/)
 > - [3 EVENTS](TOPICS/PROTOTYPING/Events_Prototypes/events_p3/)
 
+> - [1 FUNCTIONS](TOPICS/PROTOTYPING/Functions_Prototypes/functions_p1/)
+> - [2 FUNCTIONS](TOPICS/PROTOTYPING/Functions_Prototypes/functions_p2/)
+> - [3 FUNCTIONS](TOPICS/PROTOTYPING/Functions_Prototypes/functions_p3/)
+
+> - [1 ARRAYS](TOPICS/PROTOTYPING/Arrays_Prototypes/arrays_p1/)
+> - [2 ARRAYS](TOPICS/PROTOTYPING/Arrays_Prototypes/arrays_p2/)
+> - [3 ARRAYS](TOPICS/PROTOTYPING/Arrays_Prototypes/arrays_p3/)
+
 
 
